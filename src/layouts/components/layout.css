@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.c-nav{
+    background: #111111;
+    color:#fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    height: auto;
+}
+.c-nav__item{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+.c-nav__item:hover{
+    cursor: pointer;
+}
+.c-nav__item.c-nav__item--active{
+}
+.o-container{
+    margin: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+.u-centered{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}

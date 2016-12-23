@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>React/JSPM</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script src="temp/vendor.dev.js"></script>
+    <script type="text/javascript">
+    System.trace = true;
+    System.import('systemjs-hot-reloader').then(function(HotReloader) {
+      new HotReloader.default('http://localhost:8888');
+    });
+    System.import('src/app.js');
+    </script>
+</body>
+</html>
